@@ -1,0 +1,276 @@
+.hero-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+ /* Advantages Section */
+ .advantages-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--yomi-teal);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--yomi-teal);
+}
+.advantage-card {
+    padding: 20px;
+    height: 100%;
+}
+
+.advantage-icon {
+    color: var(--yomi-teal);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.advantage-title {
+    color: var(--yomi-teal);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.advantage-text {
+    color: #666;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.background-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.background-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.background-slide.active {
+    opacity: 1;
+}
+
+.content-overlay {
+    position: relative;
+    z-index: 2;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+.controls {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.banking-label {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+.banking-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.play-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0B3659;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+.play-button:hover {
+    background: #CB964A;
+    transform: scale(1.1);
+}
+.play-button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-left: 3px;
+    transition: all 0.3s ease;
+}
+.play-button.paused::after {
+    width: 3px;
+    height: 16px;
+    border: none;
+    background: white;
+    box-shadow: 6px 0 0 white;
+    border-radius: 1px;
+    margin-left: 0;
+}
+.progress-bar {
+    width: 2px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.progress-fill {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(to top, #ffffff, #CB964A);
+    border-radius: 1px;
+    transition: height 0.3s ease;
+    
+}
+
+
+.info-card {
+    /*background: var(--yomi-teal);*/
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    transform: translateX(0);
+    transition: all 0.6s ease;
+}
+.info-card.fade {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.certification-badge {
+    text-transform: uppercase;
+    color: var(--yomi-teal);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+.cta-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.cta-button:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+.iso-badge {
+    background: #1e3c72;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+
+  /* Images de fond réelles */
+        .slide-1 {
+            background-image: url('../../../images/slideAccueil/slide1.jpg');
+        }
+
+        .slide-2 {
+            background-image: url('../../../images/slideAccueil/slide2.jpg');
+        }
+
+        .slide-3 {
+            background-image: url('../../../images/slideAccueil/slide3.jpg');
+        }
+
+        .slide-4 {
+            background-image: url('../../../images/slideAccueil/slide4.jpg');
+        }
+
+        .slide-5 {
+            background-image: url('../../../images/slideAccueil/slide5.jpg');
+        }
+
+
+        @media (max-width: 768px) {
+    .hero-section { height: 500px; }
+    .content-overlay { height: 500px; }
+    .info-card { margin: 20px; padding: 25px 20px; max-width: none; }
+    .main-title { font-size: 1.8rem; margin-bottom: 20px; }
+    .controls { right: 15px; top: 20px; transform: none; position: absolute; }
+    .banking-label, .banking-title { display: none; }
+    .play-button { width: 45px; height: 45px; }
+    .play-button::after { border-left-width: 8px; border-top-width: 6px; border-bottom-width: 6px; }
+    .play-button.paused::after { height: 12px; box-shadow: 4px 0 0 white; }
+    .progress-bar { height: 60px; margin-top: 15px; }
+    .iso-badge { margin-top: 15px; padding: 12px; }
+}
+@media (max-width: 480px) {
+    .hero-section { height: 450px; }
+    .content-overlay { height: 450px; }
+    .info-card { margin: 15px; padding: 20px 15px; }
+    .main-title { font-size: 1.5rem; margin-bottom: 15px; }
+    .cta-button { padding: 12px 25px; font-size: 13px; }
+    .controls { right: 10px; top: 15px; }
+    .play-button { width: 40px; height: 40px; }
+    .progress-bar { height: 50px; }
+}

@@ -1,0 +1,19 @@
+:root {
+    --yomi-teal: #0B3659;
+    --yomi-dark-teal: #CB964A;
+    --yomi-light-teal: #637a7a;
+    --yomi-red: #e6194b;
+
+      --primary-orange: #ff6b35;
+            --card-bg: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #888888;
+            --hover-glow: rgba(255, 107, 53, 0.3);
+    
+     --dark-bg: #1a1a1a;
+    --text-light: #ffffff;
+    --text-muted: #b0b0b0;
+    --border-radius: 16px;
+    --transition: all 0.3s ease;
+}
+

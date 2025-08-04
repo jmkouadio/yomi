@@ -1,0 +1,194 @@
+        .footer {
+            background-color: var(--yomi-teal);
+            color: #cccccc;
+            padding: 60px 0 0 0;
+        }
+        
+        .footer-main {
+            padding-bottom: 40px;
+        }
+        
+        .footer-brand {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .footer-address {
+            margin-bottom: 20px;
+        }
+        
+        .footer-contact {
+            margin-bottom: 10px;
+        }
+        
+        .footer-contact strong {
+            color: white;
+        }
+        
+        .footer-contact a {
+            color: var(--yomi-dark-teal);
+            text-decoration: none;
+        }
+        
+        .footer-contact a:hover {
+            color: white;
+        }
+        
+        .footer-section h5 {
+            color: white;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--yomi-dark-teal);
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding: 25px 0;
+            background-color: #111;
+        }
+        
+        .footer-copyright {
+            color: #cccccc;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-copyright strong {
+            color: white;
+        }
+        
+        .footer-designer {
+            color: #cccccc;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-designer a {
+            color: var(--yomi-dark-teal);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .footer-designer a:hover {
+            color: white;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: #333;
+            color: var(--yomi-dark-teal);
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--yomi-dark-teal);
+            color: #1a1a1a;
+            transform: translateY(-3px);
+        }
+        
+        /* Bouton de remontée */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background-color: var(--yomi-dark-teal);
+            color: #1a1a1a;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            z-index: 1000;
+        }
+        
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .scroll-to-top:hover {
+            background-color: #e0a800;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+        }
+        
+        .scroll-to-top:active {
+            transform: translateY(-2px);
+        }
+        
+        /* Animation au scroll */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 768px) {
+            .footer {
+                padding: 40px 0 0 0;
+            }
+            
+            .footer-brand {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .social-icons {
+                justify-content: center;
+                margin-top: 20px;
+            }
+            
+            .scroll-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+            }
+        }

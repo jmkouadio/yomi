@@ -1,0 +1,185 @@
+.top-bar {
+    background-color: #CB964A;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.logo-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.btn, button{
+    cursor: pointer;
+}
+
+.nav-btn {
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+.btn-yomi-vie {
+    background-color: white;
+    color: var(--yomi-teal);
+    border: 1px solid var(--yomi-teal);
+}
+
+.btn-client {
+    background-color: var(--yomi-red);
+    color: white;
+    border: none;
+}
+
+
+.nav-btn-icon {
+    border-radius: 100px;
+}
+
+.btn-icon {
+    background-color: white;
+    color: var(--yomi-teal);
+    border: 1px solid var(--yomi-teal);
+}
+
+.btn-icon:hover{
+    background-color: var(--yomi-teal);
+    color: #fff;
+}
+
+
+.navbar {
+    background-color: var(--yomi-teal);
+    padding: 0;
+}
+
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background-color: var(--yomi-teal);
+    transition: right 0.3s ease;
+    z-index: 1050;
+    padding-top: 60px;
+}
+.navbar-collapse.show {
+    right: 0;
+}
+.navbar-toggler {
+    position: relative;
+    z-index: 0;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.close-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1052;
+}
+.close-menu-btn:focus,
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.main-menu .nav-link {
+    color: white;
+    padding: 20px 15px;
+    font-weight: 500;
+}
+.main-menu .nav-item:hover .nav-link {
+    background-color: var(--yomi-dark-teal);
+}
+
+.dropdown-menu, .mega-dropdown-menu {
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 20px;
+}
+.mega-dropdown {
+    position: static !important;
+}
+.mega-dropdown-menu h3 {
+    color: var(--yomi-dark-teal);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.mega-dropdown-menu .link-list {
+    list-style: none;
+    padding-left: 0;
+}
+.mega-dropdown-menu .link-list li {
+    margin-bottom: 10px;
+}
+.mega-dropdown-menu .link-list a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.mega-dropdown-menu .link-list a:hover {
+    color: var(--maaf-teal);
+}
+.mega-dropdown-menu .link-list a::before {
+    content: "›";
+    margin-right: 8px;
+    color: var(--maaf-teal);
+    font-weight: bold;
+}
+
+.yomi-privileges {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+.yomi-privileges h3 {
+    color: var(--yomi-dark-teal);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.yomi-privileges p {
+    color: #666;
+    font-size: 0.9rem;
+}
+.divider {
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding-top: 0;
+    }
+    .close-menu-btn {
+        display: none;
+    }
+}
+@media (max-width: 991.98px) {
+    .dropdown-menu, .mega-dropdown-menu {
+        max-height: 70vh;
+    }
+}

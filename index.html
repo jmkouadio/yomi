@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yomi Assurance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Inclusion du fichier CSS principal -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/images/slideAccueil/logo_yomi.jpg" alt="yomi Logo" class="logo">
+                </a>
+                <div class="discover-link">
+                    <a href="#" class="btn nav-btn-icon btn-icon"><i class="fa-brands fa-facebook"></i></a> &nbsp;
+                    <a href="#" class="btn nav-btn-icon btn-icon"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;
+                    <a href="#" class="btn nav-btn-icon btn-icon"><i class="fa-brands fa-tiktok"></i></i></a>
+                </div>
+
+            </div>
+
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <a href="#" class="btn nav-btn btn-yomi-vie me-2 btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                        Espace Yomi
+                    </a>
+                    <a href="#" class="btn nav-btn btn-client me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        </svg>
+                        Espace client
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Bouton pour fermer le menu (croix) -->
+                <button class="close-menu-btn" id="closeMenuBtn">
+                    &times;
+                </button>
+
+                <ul class="navbar-nav main-menu">
+                    <li class="nav-item mega-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Nos services
+                        </a>
+                        <div class="dropdown-menu mega-dropdown-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h3>ASSURANCES</h3>
+                                        <ul class="link-list">
+                                            <li><a href="assurances.html">Assurance auto/moto</a></li>
+                                            <li><a href="assurances.html">Assurance caution </a></li>
+                                            <li><a href="assurances.html">Assurance santé</a></li>
+                                            <li><a href="assurances.html">Assurance voyage</a></li>
+                                            <li><a href="assurances.html">Assurance multirisque habitation</a></li>
+                                            <li><a href="assurances.html">Assurance multirisque professionnelle</a></li>
+                                            <li><a href="assurances.html">Assurances responsabilité civile</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3>CRÉDITS</h3>
+                                        <ul class="link-list">
+                                            <li><a href="#">Crédit auto</a></li>
+                                            <li><a href="#">Crédit voiture électrique</a></li>
+                                            <li><a href="#">Crédit moto</a></li>
+                                            <li><a href="#">Crédit moto électrique</a></li>
+                                            <li><a href="#">Crédit camping-car</a></li>
+                                        </ul>
+
+                                        <div class="divider"></div>
+
+                                        <h3>SOCIETE</h3>
+                                        <ul class="link-list">
+                                            <li><a href="#">Qui sommes-nous</a></li>
+                                            <li><a href="#">Nos valeurs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="yomi-privileges">
+                                            <h3>YOMI ASSURANCE</h3>
+                                            <p>Une assurance fiable</p>
+                                            <img src="assets/images/slideAccueil/slide2.jpg" class="img-fluid mt-3"
+                                                alt="yomi Privilèges">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Le contenu principal reste inchangé, seul le CSS a été déplacé -->
+    <section class="hero-section">
+        <!-- Background Slider -->
+        <div class="background-slider">
+            <div class="background-slide slide-1 active"></div>
+            <div class="background-slide slide-2"></div>
+            <div class="background-slide slide-3"></div>
+            <div class="background-slide slide-4"></div>
+            <div class="background-slide slide-5"></div>
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="info-card">
+                            <div class="certification-badge" id="badge-text">YOMI ASSURANCE</div>
+                            <h1 class="main-title" id="main-title">YOMI ASSURANCE est toujours à vos côtés</h1>
+                            <a class="cta-button" id="cta-button">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="banking-label">Bienvenue à</div>
+            <div class="banking-title">YOMI ASSURANCE</div>
+            <div class="play-button" id="playButton"></div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+
+ <section class="our-story-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="story-image">
+                        <div class="image-slider">
+                            <div class="slider-track" id="sliderTrack">
+                                <div class="slide">
+                                    <img src="assets/images/slideAccueil/societe1.jpg" alt="Team Collaboration">
+                                    <div class="slide-overlay">
+                                        <div class="slide-title">Equipe engagée</div>
+                                        <div class="slide-description">Parfaite relation avec nos partenaires</div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/images/slideAccueil/societe2.jpg" alt="Innovation Hub">
+                                    <div class="slide-overlay">
+                                        <div class="slide-title">Equipe engagée</div>
+                                        <div class="slide-description">Parfaite communication avec les clients</div>
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="assets/images/slideAccueil/societe3.jpg" alt="Growth & Success">
+                                    <div class="slide-overlay">
+                                        <div class="slide-title">Equipe engagée</div>
+                                        <div class="slide-description">Parfaite communication avec les clients</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="slider-nav prev" id="prevBtn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-nav next" id="nextBtn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <div class="slider-dots">
+                                <span class="dot active" data-slide="0"></span>
+                                <span class="dot" data-slide="1"></span>
+                                <span class="dot" data-slide="2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="story-content">
+                        <h2 class="story-title">NOTRE HISTOIRE</h2>
+                        <p class="story-subtitle">YOMI ASSURANCE existe depuis 2024</p>
+
+                        <p class="story-description">
+                            YOMI ASSURANCE, en partenariat avec Altanta Assurances, vous offre
+                            des solutions fiables pour une vie sereine. Santé, voyage, auto, habitation,
+                            responsabilité civile et plus. Nous couvrons tous vos besoins.
+                            Elle est une société fiable qui offre des services de qualité.
+                        </p>
+
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <h4 class="feature-title">Excellence</h4>
+                                <p class="feature-description">Tout nos clients sont satisfaits de nos services.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h4 class="feature-title">Innovation</h4>
+                                <p class="feature-description">Souscrivez en ligne en 3 minutes sans vous déplacer.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4 class="feature-title">Communauté</h4>
+                                <p class="feature-description">Nous formons une famille avec nos clients.</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4 class="feature-title">Exploit</h4>
+                                <p class="feature-description">Plus de 50 client en un an</p>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <a href="#" class="btn-primary-custom">Voir plus</a>
+                            <a href="#" class="btn-outline-custom">Contactez-nous</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dashboard">
+        <div class="container-fluid p-0">
+            <h1 class="text-center text-uppercase fw-bold">Nous nous soucions de vous !</h1>
+            <!-- Navigation Tabs -->
+            <div class="row g-0 p-4">
+                <div class="col-12">
+                    <div class="nav-tabs-container">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-3">
+                                <button class="nav-card active" data-tab="innovation">
+                                    <i class="fas fa-rocket"></i>
+                                    <div>
+                                        <strong>Notre priorité</strong>
+                                        <small>Avec nous, vous êtes entre de bonnes mains</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <button class="nav-card" data-tab="security">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div>
+                                        <strong>Notre engagement</strong>
+                                        <small>Transparence, écoute et rapidité sont nos promesses.</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <button class="nav-card" data-tab="performance">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <div>
+                                        <strong>La confiance</strong>
+                                        <small>La confiance est au cœur de tout ce que nous faisons.</small>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <button class="nav-card" data-tab="support">
+                                    <i class="fas fa-headset"></i>
+                                    <div>
+                                        <strong>Support</strong>
+                                        <small>24/7 d'assistance. Conactez-nous et nous vous ferons un retour
+                                            rapidement</small>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="content-area">
+                        <!-- Innovation Content -->
+                        <div class="tab-content active" id="innovation-content">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 col-xl-5">
+                                    <div class="content-text">
+                                        <div class="icon-badge priority">
+                                            <i class="fas fa-rocket"></i>
+                                        </div>
+                                        <h2>Priorité</h2>
+                                        <p class="lead">
+                                            Chez Yomi Assurance, votre sécurité passe avant tout.
+                                            Chaque solution est pensée pour vous protéger efficacement et durablement.
+                                        </p>
+
+                                        <div class="features-list">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-check-circle"></i>
+                                                        <span>Notre objectif : que vous viviez sereinement, en sachant
+                                                            que vous êtes bien assuré.</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-check-circle"></i>
+                                                        <span>Nous croyons en une assurance humaine, proche, et tournée
+                                                            vers la solution.</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-check-circle"></i>
+                                                        <span>Avec Yomi Assurance, vous êtes au cœur de toutes nos
+                                                            décisions.</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-check-circle"></i>
+                                                        <span>Nous ne faisons aucun compromis sur votre
+                                                            tranquillité.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <a href="test.html" class="btn cta-button">
+                                            Voir plus <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="image-container">
+                                        <div class="device-mockup">
+                                            <div class="phone-screen">
+                                                <div class="app-interface">
+                                                    <div class="status-bar">Yomi</div>
+                                                    <div class="app-grid">
+                                                        <div class="app-item">PRI</div>
+                                                        <div class="app-item">O</div>
+                                                        <div class="app-item">RI</div>
+                                                        <div class="app-item">TE</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security Content -->
+                        <div class="tab-content" id="security-content">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 col-xl-5">
+                                    <div class="content-text">
+                                        <div class="icon-badge security">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h2>Un engagement sincère</h2>
+                                        <p class="lead">
+                                            Nous traitons chaque demande avec sérieux et humanité.
+                                            Pas de jargon, pas de pièges, juste des solutions claires.
+                                            Votre confiance nous engage chaque jour à faire mieux.
+                                            Et nous tenons nos engagements.
+                                        </p>
+
+
+                                        <button class="cta-button">
+                                            Découvrir <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="image-container security-visual">
+                                        <div class="security-shield">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="security-rings">
+                                            <div class="ring ring-1"></div>
+                                            <div class="ring ring-2"></div>
+                                            <div class="ring ring-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Performance Content -->
+                        <div class="tab-content" id="performance-content">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 col-xl-5">
+                                    <div class="content-text">
+                                        <div class="icon-badge performance">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                        </div>
+                                        <h2>Une confiance sinère</h2>
+                                        <p class="lead">
+                                            Avec Yomi Assurance, pas de surprises : vous êtes toujours informé.
+                                            Nos clients restent avec nous parce qu’ils se sentent écoutés.
+                                            Votre tranquillité est notre plus grande réussite.
+                                            Et elle commence par une relation vraie.
+                                        </p>
+
+
+                                        <button class="cta-button">
+                                            Tester <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="image-container performance-visual">
+                                        <div class="speed-meter">
+                                            <div class="meter-arc"></div>
+                                            <div class="meter-needle"></div>
+                                            <div class="meter-center">
+                                                <span>Confiance</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Content -->
+                        <div class="tab-content" id="support-content">
+                            <div class="row align-items-center h-100">
+                                <div class="col-lg-6 col-xl-5">
+                                    <div class="content-text">
+                                        <div class="icon-badge support">
+                                            <i class="fas fa-headset"></i>
+                                        </div>
+                                        <h2>Support</h2>
+                                        <p class="lead">Assistance technique 24/7 avec des experts dédiés. Support
+                                            multilingue par chat, email et téléphone pour résoudre tous vos problèmes
+                                            rapidement.</p>
+
+                                        <div class="features-list">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-clock"></i>
+                                                        <span>Support 24/7 disponible</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-users"></i>
+                                                        <span>Équipe d'experts dédiée</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-language"></i>
+                                                        <span>Support multilingue</span>
+                                                    </div>
+                                                    <div class="feature-item">
+                                                        <i class="fas fa-star"></i>
+                                                        <span>Satisfaction garantie</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="stats-row">
+                                            <div class="stat-item">
+                                                <h3>2min</h3>
+                                                <small>TEMPS RÉPONSE</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <h3>99%</h3>
+                                                <small>SATISFACTION</small>
+                                            </div>
+
+                                        </div>
+
+                                        <button class="cta-button">
+                                            Contacter <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-xl-7">
+                                    <div class="image-container support-visual">
+                                        <div class="support-center">
+                                            <div class="chat-bubble">
+                                                <i class="fas fa-comment"></i>
+                                                <span>Comment puis-je vous aider ?, Cliquer sur le bouton
+                                                    "Contacter"</span>
+                                            </div>
+                                            <div class="support-agent">
+                                                <div class="agent-avatar">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                                <div class="agent-status">
+                                                    <span class="status-dot"></span>
+                                                    En ligne
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="client-section w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="client-title">Tu veux avoir une assurance fiable ?</h2>
+                    <p class="client-subtitle">Découvre nos assurances pour en savoir plus</p>
+                    <a href="assurance.html" class="client-btn">Nos assurances</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-container">
+        <h2 class="story-title">TEMOIGNAGE</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div>
+                        <img src="assets/images/slideAccueil/slide1.jpg" alt="David Rodriguez" class="profile-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                          En un clic j'ai reçu mon assurance. Je suis très content !
+                        </div>
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">David Rodriguez</div>
+                        <div class="author-role">Comptable</div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card active">
+                    <div>
+                        <img src="assets/images/slideAccueil/slide2.jpg" alt="Amanda Wilson" class="profile-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-text">
+                          En un clic j'ai reçu mon assurance. Je suis très content !
+                        </div>
+                    </div>
+                     <div class="author-info">
+                        <div class="author-name">David Rodriguez</div>
+                        <div class="author-role">Comptable</div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div>
+                        <img src="assets/images/slideAccueil/slide3.jpg" alt="Ryan Thompson" class="profile-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                         <div class="testimonial-text">
+                          En un clic j'ai reçu mon assurance. Je suis très content !
+                        </div>
+                    </div>
+                     <div class="author-info">
+                        <div class="author-name">David Rodriguez</div>
+                        <div class="author-role">Comptable</div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="testimonial-card">
+                    <div>
+                        <img src="assets/images/slideAccueil/slide4.jpg" alt="Sarah Chen" class="profile-img">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                         <div class="testimonial-text">
+                          En un clic j'ai reçu mon assurance. Je suis très content !
+                        </div>
+                    </div>
+                     <div class="author-info">
+                        <div class="author-name">David Rodriguez</div>
+                        <div class="author-role">Comptable</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-nav">
+            <button class="navBut" id="btnprevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="navBut" id="btnnextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <section class="faq-section">
+       
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- FAQ Accordion Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="faq-left">
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Pourquoi nous choisir pour votre assurance santé ?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <div class="faq-answer-content">
+                                        Bénéficiez d’un large réseau de soins, des prestations de qualité, et sans
+                                        risques d’accompagnement.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Pourquoi nous choisir pour votre assurance santé ?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <div class="faq-answer-content">
+                                        Bénéficiez d’un large réseau de soins, des prestations de qualité, et sans
+                                        risques d’accompagnement.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Pourquoi nous choisir pour votre assurance santé ?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <div class="faq-answer-content">
+                                        Bénéficiez d’un large réseau de soins, des prestations de qualité, et sans
+                                        risques d’accompagnement.
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Pourquoi nous choisir pour votre assurance santé ?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <div class="faq-answer-content">
+                                        Bénéficiez d’un large réseau de soins, des prestations de qualité, et sans
+                                        risques d’accompagnement.
+                                    </div>
+                                </div>
+                            </div>
+
+                           <div class="faq-item">
+                                <div class="faq-question" onclick="toggleFAQ(this)">
+                                    <span>Pourquoi nous choisir pour votre assurance santé ?</span>
+                                    <span class="faq-toggle">+</span>
+                                </div>
+                                <div class="faq-answer">
+                                    <div class="faq-answer-content">
+                                        Bénéficiez d’un large réseau de soins, des prestations de qualité, et sans
+                                        risques d’accompagnement.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="faq-right">
+                        <div class="chat-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+
+                        <h2 class="faq-title">Vous ne trouvez pas de réponse à vos questions ?</h2>
+
+                        <p class="faq-description">
+                            Veuillez nous contactez sur Whatsapp pour une prise en charge rapide.
+                            Nous sommes disponible tous les jours pour répondre à vos
+                            préocupations. Chez Yomi Assurance, comme on le dit 'le client est roi !!!'
+                        </p>
+
+                        <a href="#" class="contact-btn">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row g-4">
+                    <!-- Colonne 1: Informations de l'entreprise -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <h3 class="footer-brand">YOMI ASSURANCE</h3>
+                        <div class="footer-address">
+                            <i class="fa-solid fa-location-dot"></i> Rond point ADO - Riviera Bonoumin Cocody<br>
+                           Abidjan - Côte d’Ivoire
+                        </div>
+                        <div class="footer-contact">
+                            <strong><i class="fa-solid fa-phone"></i></strong> <a href="tel:+2250757670297"> +225 07 57 67 02 97</a>
+                        </div>
+                        <div class="footer-contact">
+                            <strong><i class="fa-solid fa-envelope"></i></strong> <a href="mailto:e.assamoa@yomiassurance.com">info@yomi-assurance.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Colonne 2: Liens utiles -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <div class="footer-section">
+                            <h5>Liens Utiles</h5>
+                            <ul class="footer-links">
+                                <li><a href="#home">Accueil</a></li>
+                                <li><a href="#about">Les assurances</a></li>
+                                <li><a href="#services">Qui sommes-nous ?</a></li>
+                                <li><a href="#terms">Contact</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- Colonne 3: Informations de l'entreprise -->
+                    <div class="col-lg-4 col-md-6 fade-in-up">
+                        <h3 class="footer-brand">YOMI ASSURANCE </h3>
+                        <div class="footer-address">
+                           Nous comblons vos attentes. <br>
+                            Contactez-nous et nous <br>
+                            vous répondrons dans <br>
+                            un bref délais <br>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright">
+                            © Copyright <strong>YOMI ASSURANCE</strong>. Tous droits reservés !
+                        </p>
+                        <p class="footer-designer">
+                            Conçu et développé par <a href="#">Jean Marc Kouadio - CreateSoft</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-icons justify-content-md-end">
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton de remontée -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Remonter en haut de la page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/slideAccueil.js"></script>
+    <script src="assets/js/story.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/testimonial.js"></script>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/footer.js"></script>
+</body>
+
+</html>
